@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Geologica", sans-serif;
+}
+
+#cont-rows{
+    margin: 0;
+    padding: 0;
+}
+#logo-nav{
+    width: 6%;
+    height: 6%;
+}
+.banner {
+    background-image: url('../assets/imagenes/fondo-header.PNG');
+    object-fit: cover;
+    background-size: cover;
+    height: 1000px;
+    position: relative;
+}
+#elementos-menu{
+    border-radius: 9%;
+    transition: background-color 0.7s ease;
+}
+#elementos-menu:hover{
+    background-color: rgb(201, 201, 201);
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; 
+}
+
+.dropdown-menu {
+    background-color: rgb(248, 249, 250);
+    margin-top: 0; 
+    transition: opacity 0.3s ease;
+    opacity: 0;
+}
+.dropdown-item{
+    background-color: rgb(248, 249, 250);
+    transition: background-color 0.5s ease;
+}
+.dropdown-item:hover{
+    background-color:rgb(201, 201, 201);
+}
+
+.dropdown:hover .dropdown-menu {
+    opacity: 1; 
+}
+
+
+    
