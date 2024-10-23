@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: "Geologica", sans-serif;
+    
 }
 img{
     width: 100%;
@@ -153,6 +154,9 @@ svg{
     justify-content: center;
     align-items: center;
 }
+#cont-button__accesorios{
+    margin-top: 5%;
+}
 .button {
     width: 20%;
     height: max-content;
@@ -219,7 +223,13 @@ svg{
     background: #2f4f7596;
   }
 
-  .catalog-item {
+#cont-accesorios{
+    width: 80%;
+    margin-top: 3%;
+    margin-bottom: 6%;
+}
+
+.catalog-item {
     position: relative;
     overflow: hidden;
     height: 300px; 
@@ -227,10 +237,10 @@ svg{
 }
 
 .catalog-item img {
-    width: 100%;
+    max-width: 100%;
     height: 100%; 
-    object-fit: fill;
     transition: transform 0.5s ease;
+    
 }
 
 .catalog-item:hover img {
@@ -257,13 +267,6 @@ svg{
     font-weight: bold;
     color: white;
 }
-
-/* Ajuste de espacio entre tarjetas */
-.row.g-3 {
-    gap: 20px; /* Espaciado entre las tarjetas */
-}
-
-
 
 
 .bg-custom {
@@ -350,6 +353,9 @@ footer li{
     margin-bottom: -13%;
     font-size: 16px;
 }
+#a-ropa{
+    width: 100%;
+}
 
 
 @media screen and (min-width: 320px) and (max-width: 767px){
@@ -379,5 +385,10 @@ footer li{
     .iconos{
         margin-top: 2%;
         margin-bottom: 4%;
+    }
+    #accesorios-img__responsive{
+        object-position: right;
+        scale: 1.19;
+        overflow: hidden;
     }
 }
