@@ -53,6 +53,8 @@ img{
     background-color:rgb(201, 201, 201);
 }
 
+
+
 h1{
     color: #2f4e75;
 }
@@ -102,6 +104,7 @@ h1{
    }
    
    .card-footer {
+    margin-bottom: 10%;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -139,8 +142,10 @@ box-shadow: rgba(226, 196, 63, 0.25) 0px 13px 47px -5px, rgba(180, 71, 71, 0.3) 
  background-color: #2f4e75;
 }
 
+
+
 .bg-custom {
-    background-color: #2f4e75;
+    background-color: #2f4e75;  
 }
 footer{
     height: 300px;
@@ -154,46 +159,38 @@ footer p{
 footer li{
     font-size: 20px;
 }
-
 #menu-footer{
     display: flex;
     justify-content: center;
     gap: 2rem; 
     margin-top: 2%;
 }
-#elementos-navfooter{
+#elementos-nav__footer{
     margin-top: 3%;
 }
-
 .sub-elements {
     margin-top: 0.5%; 
 }
-
 .sub-item {
     font-size: 0.85rem;
     color: rgba(255, 255, 255, 0.7);
 }
-
 .sub-item:hover {
     color: white;
 }
-
 .footer-divider {
     border: none;
     border-top: 1px solid rgba(255, 255, 255, 0.329);
     margin-top: 1%;
     margin-bottom: 2.5%;
 }
-
 .text-light {
     color: rgba(255, 255, 255, 0.7); 
 }
-
 .navbar-dark .nav-link {
     color: rgba(255, 255, 255, 0.397);
     transition: color 0.5s ease;
 }
-
 .navbar-dark .nav-link:hover {
     color: white;
 }
