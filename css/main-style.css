@@ -17,7 +17,7 @@ img{
 }
 .banner {
     background-image: url('../assets/imagenes/fondo-header.PNG');
-    object-fit: cover;
+    background-position: center;
     background-size: cover;
     height: 1000px;
     position: relative;
@@ -219,33 +219,51 @@ svg{
     background: #2f4f7596;
   }
 
-.cont-galeria{
-    margin-top: 5%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 2%;
-    margin-right: 2%;
-    width: 90%;
-    height: 400px;
+  .catalog-item {
+    position: relative;
+    overflow: hidden;
+    height: 300px; 
+    margin-top: 20px; 
 }
-.card-galeria img{
-    object-position: center;
-}
-.card-galeria{
-    border-radius: 20px;
-    margin-left: 4%;
-    height: 100%;
+
+.catalog-item img {
     width: 100%;
-    flex: 1;
-    transition: .3s all ease;
-    background-color: #252525;
+    height: 100%; 
+    object-fit: fill;
+    transition: transform 0.5s ease;
 }
-.card-galeria:hover{
-    flex: 2;
-    transform: scale(1.05);
-    background-color: #25252533;
+
+.catalog-item:hover img {
+    transform: scale(1.07); 
 }
+
+.catalog-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #2f4e75;
+    text-align: center;
+    padding: 10px 0;
+    transition: background 0.6s ease;
+}
+.catalog-text:hover{
+    background: #537caf;
+}
+
+.catalog-text h3 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Ajuste de espacio entre tarjetas */
+.row.g-3 {
+    gap: 20px; /* Espaciado entre las tarjetas */
+}
+
+
 
 
 .bg-custom {
